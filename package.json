@@ -1,0 +1,24 @@
+{
+  "name": "learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pitagoras27/learning.git"
+  },
+  "keywords": [],
+  "author": "Carlos Gutiérrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pitagoras27/learning/issues"
+  },
+  "homepage": "https://github.com/Pitagoras27/learning#readme",
+  "devDependencies": {
+    "live-server": "1.2.1"
+  }
+}
