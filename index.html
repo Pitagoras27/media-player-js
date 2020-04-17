@@ -26,13 +26,15 @@
             const video = document.querySelector('video')
             const button = document.querySelector('button')
 
-            function videoPlayer() {}
-
-            videoPlayer.prototype.play = () => {
-                video.play()
+            function videoPlayer(config) {
+                this.media = config.el
             }
 
-            const mediaPlayer = new videoPlayer()
+            videoPlayer.prototype.play = function () {
+                this.media.play()
+            }
+
+            const mediaPlayer = new videoPlayer({ el: video })
 
             button.onclick = () => {
                 mediaPlayer.play()
