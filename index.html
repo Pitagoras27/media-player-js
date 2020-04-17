@@ -34,10 +34,22 @@
                 this.media.play()
             }
 
+            videoPlayer.prototype.pause = function () {
+                this.media.pause()
+            }
+
+            videoPlayer.prototype.toogle = function () {
+                if (this.media.paused) {
+                    this.play()
+                } else {
+                    this.pause()
+                }
+            }
+
             const mediaPlayer = new videoPlayer({ el: video })
 
             button.onclick = () => {
-                mediaPlayer.play()
+                mediaPlayer.toogle()
             }
         </script>
     </body>
