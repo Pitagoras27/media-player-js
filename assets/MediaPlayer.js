@@ -1,5 +1,6 @@
 function videoPlayer(config) {
     this.media = config.el
+    this.plugins = config.plugins || []
 }
 
 videoPlayer.prototype.play = function () {
