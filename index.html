@@ -21,5 +21,22 @@
 
             <button>Play/Pause</button>
         </main>
+        <script>
+            // realizado con ES6. Con soporte para navegadores modernos
+            const video = document.querySelector('video')
+            const button = document.querySelector('button')
+
+            function videoPlayer() {}
+
+            videoPlayer.prototype.play = () => {
+                video.play()
+            }
+
+            const mediaPlayer = new videoPlayer()
+
+            button.onclick = () => {
+                mediaPlayer.play()
+            }
+        </script>
     </body>
 </html>
