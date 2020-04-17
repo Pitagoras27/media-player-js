@@ -21,36 +21,6 @@
 
             <button>Play/Pause</button>
         </main>
-        <script>
-            // realizado con ES6. Con soporte para navegadores modernos
-            const video = document.querySelector('video')
-            const button = document.querySelector('button')
-
-            function videoPlayer(config) {
-                this.media = config.el
-            }
-
-            videoPlayer.prototype.play = function () {
-                this.media.play()
-            }
-
-            videoPlayer.prototype.pause = function () {
-                this.media.pause()
-            }
-
-            videoPlayer.prototype.toogle = function () {
-                if (this.media.paused) {
-                    this.play()
-                } else {
-                    this.pause()
-                }
-            }
-
-            const mediaPlayer = new videoPlayer({ el: video })
-
-            button.onclick = () => {
-                mediaPlayer.toogle()
-            }
-        </script>
+        <script type="module" src="/assets/index.js"></script>
     </body>
 </html>
