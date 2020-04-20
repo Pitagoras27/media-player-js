@@ -35,4 +35,12 @@ videoPlayer.prototype.toogle = function () {
     }
 }
 
+videoPlayer.prototype.toogleMuted = function () {
+    if (this.media.muted) {
+        this.unmute()
+    } else {
+        this.mute()
+    }
+}
+
 export default videoPlayer
