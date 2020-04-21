@@ -10,7 +10,7 @@ const mediaPlayer = new VideoPlayer(
     {
         el: video,
         plugins: [
-            new AutoPlay(), new AutoPos(video)
+            new AutoPlay(), new AutoPos()
         ]
     }
 )
